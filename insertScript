@@ -46,7 +46,7 @@ INSERT INTO countries VALUES (NULL, "Brasil", 5);
 
 #INSERT EM "countries" ----------
 
-insert into departments values (NULL, "Educação Científica e Tecnologia", 15);
+insert into departments values (NULL, "Educação Científica", 15);
 insert into departments values (NULL, "Ciências da Saúde", 12);
 insert into departments values (NULL, "Trânsito", 11);
 insert into departments values (NULL, "Ciência da Computação", 11);
