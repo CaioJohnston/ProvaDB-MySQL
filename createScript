@@ -1,0 +1,79 @@
+CREATE TABLE Jobs (
+id INT NOT NULL AUTO_INCREMENT,
+title varchar(35) NOT NULL,
+min_salary FLOAT NOT NULL,
+max_salary FLOAT NOT NULL,
+PRIMARY KEY (id)
+);
+
+CREATE TABLE Job_History (
+employee_id INT NOT NULL,
+start_date DATE NOT NULL,
+end_date DATE NOT NULL,
+job_id INT NOT NULL,
+department_id INT NOT NULL
+   
+);
+
+CREATE TABLE Departments (
+id INT NOT NULL AUTO_INCREMENT,
+name varchar(30) NOT NULL,
+location_id INT NOT NULL,
+PRIMARY KEY (id)
+);
+
+CREATE TABLE Employees (
+id INT NOT NULL AUTO_INCREMENT,
+first_name varchar(20) NOT NULL,
+last_name varchar(25) NOT NULL,
+email varchar(25) NOT NULL,
+phone_number varchar(20) NOT NULL,
+hire_date DATE NOT NULL,
+job_id INT NOT NULL,
+salary FLOAT NOT NULL,
+commission_pct INT NOT NULL,
+department_id INT NOT NULL,
+manager_id INT NOT NULL,
+PRIMARY KEY (id)
+);
+
+CREATE TABLE Locations (
+id INT NOT NULL AUTO_INCREMENT,
+street_address varchar(40) NOT NULL,
+postal_code varchar(12) NOT NULL,
+city varchar(30) NOT NULL,
+state varchar(25) NOT NULL,
+country_id INT NOT NULL,
+PRIMARY KEY (id)
+);
+
+CREATE TABLE Countries (
+id INT NOT NULL AUTO_INCREMENT,
+name varchar(40) NOT NULL,
+region_id INT NOT NULL,
+PRIMARY KEY (id)
+);
+
+CREATE TABLE Regions (
+id INT NOT NULL AUTO_INCREMENT,
+name varchar(25) NOT NULL,
+PRIMARY KEY (id)
+);
+
+ALTER TABLE Job_History ADD CONSTRAINT FOREIGN KEY (employee_id) REFERENCES Employees(id);
+
+ALTER TABLE Job_History ADD CONSTRAINT FOREIGN KEY (job_id) REFERENCES Jobs(id);
+
+ALTER TABLE Job_History ADD CONSTRAINT FOREIGN KEY (department_id) REFERENCES Departments(id);
+
+ALTER TABLE Employees ADD CONSTRAINT FOREIGN KEY (manager_id) REFERENCES Departments(id);
+
+ALTER TABLE Departments ADD CONSTRAINT FOREIGN KEY (location_id) REFERENCES Locations(id);
+
+ALTER TABLE Employees ADD CONSTRAINT FOREIGN KEY (job_id) REFERENCES Jobs(id);
+
+ALTER TABLE Employees ADD CONSTRAINT FOREIGN KEY (department_id) REFERENCES Departments(id);
+
+ALTER TABLE Locations ADD CONSTRAINT FOREIGN KEY (country_id) REFERENCES Countries(id);
+
+ALTER TABLE Countries ADD CONSTRAINT FOREIGN KEY (region_id) REFERENCES Regions(id);
