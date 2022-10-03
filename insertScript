@@ -1,0 +1,68 @@
+#INSERT EM "regions" ----------
+
+INSERT INTO regions VALUES (NULL, "Pará");
+INSERT INTO regions VALUES (NULL, "Acre");
+INSERT INTO regions VALUES (NULL, "Amazonas");
+INSERT INTO regions VALUES (NULL, "Bahia");
+INSERT INTO regions VALUES (NULL, "Ceara");
+INSERT INTO regions VALUES (NULL, "Distrito Federal");
+INSERT INTO regions VALUES (NULL, "Espirito Santo");
+INSERT INTO regions VALUES (NULL, "Goiás");
+INSERT INTO regions VALUES (NULL, "Maranhão");
+INSERT INTO regions VALUES (NULL, "Mato Grosso");
+INSERT INTO regions VALUES (NULL, "Minas Gerais");
+INSERT INTO regions VALUES (NULL, "Paraíba");
+INSERT INTO regions VALUES (NULL, "Pernambuco");
+INSERT INTO regions VALUES (NULL, "Piauí");
+INSERT INTO regions VALUES (NULL, "Rio de Janeiro");
+INSERT INTO regions VALUES (NULL, "Rio Grande do Norte");
+INSERT INTO regions VALUES (NULL, "Rio Grande do Sul");
+INSERT INTO regions VALUES (NULL, "Santa Catarina");
+INSERT INTO regions VALUES (NULL, "São Paulo");
+INSERT INTO regions VALUES (NULL, "Sergipe");
+
+#INSERT EM "countries" ----------
+
+INSERT INTO countries VALUES (NULL, "Brasil", 1);
+INSERT INTO countries VALUES (NULL, "Brasil", 1);
+INSERT INTO countries VALUES (NULL, "Brasil", 1);
+INSERT INTO countries VALUES (NULL, "Brasil", 1);
+INSERT INTO countries VALUES (NULL, "Brasil", 1);
+INSERT INTO countries VALUES (NULL, "Brasil", 19);
+INSERT INTO countries VALUES (NULL, "Brasil", 19);
+INSERT INTO countries VALUES (NULL, "Brasil", 19);
+INSERT INTO countries VALUES (NULL, "Brasil", 19);
+INSERT INTO countries VALUES (NULL, "Brasil", 19);
+INSERT INTO countries VALUES (NULL, "Brasil", 15);
+INSERT INTO countries VALUES (NULL, "Brasil", 15);
+INSERT INTO countries VALUES (NULL, "Brasil", 15);
+INSERT INTO countries VALUES (NULL, "Brasil", 15);
+INSERT INTO countries VALUES (NULL, "Brasil", 15);
+INSERT INTO countries VALUES (NULL, "Brasil", 5);
+INSERT INTO countries VALUES (NULL, "Brasil", 5);
+INSERT INTO countries VALUES (NULL, "Brasil", 5);
+INSERT INTO countries VALUES (NULL, "Brasil", 5);
+INSERT INTO countries VALUES (NULL, "Brasil", 5);
+
+#INSERT EM "countries" ----------
+
+insert into departments values (NULL, "Educação Científica e Tecnologia", 15);
+insert into departments values (NULL, "Ciências da Saúde", 12);
+insert into departments values (NULL, "Trânsito", 11);
+insert into departments values (NULL, "Ciência da Computação", 11);
+insert into departments values (NULL, "Biblioteconomia", 12);
+insert into departments values (NULL, "Artes Visuais", 10);
+insert into departments values (NULL, "Enfermagem", 9);
+insert into departments values (NULL, "Design", 9);
+insert into departments values (NULL, "Engenharia Ambiental", 18);
+insert into departments values (NULL, "Engenharia Civil", 13);
+insert into departments values (NULL, "Agronomia", 13);
+insert into departments values (NULL, "Engenharia de Software", 1);
+insert into departments values (NULL, "Moda", 12);
+insert into departments values (NULL, "Pedagogia", 12);
+insert into departments values (NULL, "Música", 5);
+insert into departments values (NULL, "História", 7);
+insert into departments values (NULL, "Física", 9);
+insert into departments values (NULL, "Engenharia Sanitária", 4);
+insert into departments values (NULL, "Teatro", 3);
+insert into departments values (NULL, "Química", 2);
