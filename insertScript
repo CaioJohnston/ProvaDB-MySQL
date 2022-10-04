@@ -115,10 +115,10 @@ insert into jobs values (NULL, "Odontologista", 8500, 20000);
 
 #INSERT EM "employees" ----------
 
-INSERT INTO employees VALUES (NULL, "Caio", "Johnston", "caio@db.com", "911112222", "2020-01-01", 7, 10000, 10, 5, 5);
-INSERT INTO employees VALUES (NULL, "Pedro", "Vitor", "pedro@db.com", "933334444", "2021-07-02", 7, 5000, 10, 5, 5);
-INSERT INTO employees VALUES (NULL, "Ricardo", "Vigliano", "ricardo@db.com", "955556666", "2018-01-06", 7, 18000, 10, 5, 5);
-INSERT INTO employees VALUES (NULL, "Vinicius", "Rayol", "vinicius@db.com", "977778888", "2018-01-06", 7, 15000, 10, 5, 5);
+INSERT INTO employees VALUES (NULL, "Caio", "Johnston", "caio@db.com", "911112222", "2020-01-01", 7, 10000, 10, 4, 4);
+INSERT INTO employees VALUES (NULL, "Pedro", "Vitor", "pedro@db.com", "933334444", "2021-07-02", 7, 5000, 10, 4, 4);
+INSERT INTO employees VALUES (NULL, "Ricardo", "Vigliano", "ricardo@db.com", "955556666", "2018-01-06", 7, 18000, 10, 4, 4);
+INSERT INTO employees VALUES (NULL, "Vinicius", "Rayol", "vinicius@db.com", "977778888", "2018-01-06", 7, 15000, 10, 4, 4);
 INSERT INTO employees VALUES (NULL, "Pedro", "Girotto", "girotto@cesupa.com", "945670453", "2013-05-24", 1, 13500, 0, 14, 14);
 INSERT INTO employees VALUES (NULL, "Marcos", "Paulo", "mp@cesupa.com", "987875540", "2013-04-14", 1, 15000, 0, 14, 14);
 INSERT INTO employees VALUES (NULL, "Blaze", "Prazeres", "bpraz@hotmail.com", "911112222", "2020-01-01", 7, 11000, 1, 4, 4);
