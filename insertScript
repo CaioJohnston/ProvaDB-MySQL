@@ -112,3 +112,29 @@ insert into jobs values (NULL, "Encanador", 5500, 8800);
 insert into jobs values (NULL, "Marceneiro", 4800, 12400);
 insert into jobs values (NULL, "Jornalista", 3500, 12000);
 insert into jobs values (NULL, "Odontologista", 8500, 20000);
+
+#INSERT EM "employees" ----------
+
+INSERT INTO employees VALUES (NULL, "Caio", "Johnston", "caio@db.com", "911112222", "2020-01-01", 7, 10000, 10, 5, 5);
+INSERT INTO employees VALUES (NULL, "Pedro", "Vitor", "pedro@db.com", "933334444", "2021-07-02", 7, 5000, 10, 5, 5);
+INSERT INTO employees VALUES (NULL, "Ricardo", "Vigliano", "ricardo@db.com", "955556666", "2018-01-06", 7, 18000, 10, 5, 5);
+INSERT INTO employees VALUES (NULL, "Vinicius", "Rayol", "vinicius@db.com", "977778888", "2018-01-06", 7, 15000, 10, 5, 5);
+INSERT INTO employees VALUES (NULL, "Pedro", "Girotto", "girotto@cesupa.com", "945670453", "2013-05-24", 1, 13500, 0, 14, 14);
+INSERT INTO employees VALUES (NULL, "Marcos", "Paulo", "mp@cesupa.com", "987875540", "2013-04-14", 1, 15000, 0, 14, 14);
+INSERT INTO employees VALUES (NULL, "Blaze", "Prazeres", "bpraz@hotmail.com", "911112222", "2020-01-01", 7, 11000, 1, 4, 4);
+INSERT INTO employees VALUES (NULL, "Isaac", "ElGrably", "ehoisaac@gmail.com", "955342652", "2020-01-01", 8, 7000, 3, 15, 15);
+INSERT INTO employees VALUES (NULL, "Matue", "Tuezin", "tuetue@gmail.com", "977776666", "2021-04-10", 8, 5000, 2, 15, 15);
+INSERT INTO employees VALUES (NULL, "Luan", "Carvalho", "cadeira@gmail.com", "988542652", "2019-03-18", 5, 35000, 5, 8, 8);
+INSERT INTO employees VALUES (NULL, "Steve", "Minecraft", "infancia@db.com", "976762222", "2021-03-29", 11, 8800, 7, 7, 7);
+INSERT INTO employees VALUES (NULL, "Bolso", "Lula", "2turno@gmail.com", "990987761", "2022-10-30", 15, 4600, 4, 6, 6);
+INSERT INTO employees VALUES (NULL, "Lucifer", "Morningstar", "therealdevil@gmail.com", "900986700", "2015-07-07", 1, 15000, 3, 16, 16);
+INSERT INTO employees VALUES (NULL, "Chandler", "Bing", "bestoffriends@gmail.com", "911124555", "2017-08-13", 2, 5000, 2, 7, 7);
+INSERT INTO employees VALUES (NULL, "Babu", "Santana", "10dauniao@db.com", "910101010", "2020-01-10", 13, 5500, 12, 4, 4);
+INSERT INTO employees VALUES (NULL, "Marshall", "Mathers", "slimshady@gmail.com", "987951100", "2018-06-25", 8, 5000, 1, 15, 15);
+INSERT INTO employees VALUES (NULL, "Manoel", "Caneta", "canetaazul@db.com", "972482652", "2017-08-13", 14, 5000, 5, 4, 4);
+INSERT INTO employees VALUES (NULL, "Cassiopeia", "DuCouteau", "cassioloira@db.com", "972543252", "2020-01-10", 9, 8500, 10, 3, 3);
+INSERT INTO employees VALUES (NULL, "Joaquin", "Phoenix", "jokeractor@gmail.com", "974487652", "2018-06-25", 5, 45000, 6, 13, 13);
+INSERT INTO employees VALUES (NULL, "Alessandra", "Natasha", "ale@cesupa.com", "912459087", "2012-01-13", 5, 50000, 0, 14, 14);
+
+#INSERT EM "jobs_history" ----------
+
