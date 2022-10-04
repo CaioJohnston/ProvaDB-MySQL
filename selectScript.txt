@@ -1,0 +1,28 @@
+a) Faça uma seleção que mostre sobrenome (last_name) dos empregados que possuem a terceira letra sendo “a”. <b>bold</b>
+Nesta seleção mostre também o nome do departamento que o empregado trabalha, ordenando a saída de dados pelo último nome do empregado (ordem alfabética ascendente).
+
+b) Construa uma query (consulta) que mostre a quantidade de empregados por nome do departamento.
+
+c) Escreva uma query (consulta) que mostre a diferença entre o maior e o menor salário. Faça com que o resultado seja mostrado com o label “Diferença”.
+
+d) Selecione o número, nome e sobrenome dos empregados que ganham mais do que a média de salário acrescido de 10%.
+
+e) Selecione o nome e a data de admissão de todos os empregados que foram admitidos depois do empregado de sobrenome (last_name) Davies.
+(Vocês precisam inserir um empregado com esse sobrenome)
+
+f)  Construa uma query na qual seja retornada o número do gerente e o menor salário pago para um empregado supervisionado pelo gerente. 
+Exclua do resultado os empregados em que o salário seja maior ou igual a 3000 ou menor ou igual à 6000. Ordene o resultado por ordem descendente de salário.
+
+g) Selecione o primeiro nome do empregado, o nome do cargo atual (job_title) e do anterior.
+
+h)  Mostrar a quantidade de empregados por nome da região.
+
+i)  Escreva uma query que mostre o nome do departamento, localização do mesmo, quantidade de funcionários e média de salários para todos os empregados de um departamento.  
+Faça com que o resultado seja mostrado com os labels “Nome do Depto”, “Localização”, “Número de Funcionários” e “Média de Salário”. 
+Agrupar o resultado por nome do departamento e localização do mesmo.
+
+j)  Construa uma query que mostre o nome e sobrenome (concatenado) 
+dos empregados os quais trabalham em algum departamento que possui empregados que contém a letra “u” em qualquer posição do último nome (last_name).
+
+k) Para cada empregado, mostre o número do mesmo, sobrenome, salário e o salário acrescido do valor do menor salário (min_salary) para o cargo que ele exerce. 
+Faça com que o salário acrescido seja mostrado com o label (utilizando as) “Novo Salário”.
