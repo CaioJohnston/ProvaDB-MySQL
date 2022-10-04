@@ -1,9 +1,14 @@
 a) Faça uma seleção que mostre sobrenome (last_name) dos empregados que possuem a terceira letra sendo “a”.
 Nesta seleção mostre também o nome do departamento que o empregado trabalha, ordenando a saída de dados pelo último nome do empregado (ordem alfabética ascendente).
+SELECT last_name FROM employees where SUBSTRING(last_name, 3 , 1) = 'a';
 
 b) Construa uma query (consulta) que mostre a quantidade de empregados por nome do departamento.
+SELECT departments.name, COUNT(*) AS num_funcionarios FROM employees 
+JOIN departments ON departments.id=employees.department_id
+GROUP BY department_id;
 
 c) Escreva uma query (consulta) que mostre a diferença entre o maior e o menor salário. Faça com que o resultado seja mostrado com o label “Diferença”.
+SELECT (MAX(salary) - MIN(salary)) AS Diferença FROM employees;
 
 d) Selecione o número, nome e sobrenome dos empregados que ganham mais do que a média de salário acrescido de 10%.
 
