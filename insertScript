@@ -44,25 +44,71 @@ INSERT INTO countries VALUES (NULL, "Brasil", 5);
 INSERT INTO countries VALUES (NULL, "Brasil", 5);
 INSERT INTO countries VALUES (NULL, "Brasil", 5);
 
-#INSERT EM "countries" ----------
+#INSERT EM "locations" ----------
+
+INSERT INTO locations VALUES (NULL, "Alcindo Cacela", "312", "Belém", "Pará", 1);
+INSERT INTO locations VALUES (NULL, "14 de Março", "520", "Belém", "Pará", 1);
+INSERT INTO locations VALUES (NULL, "Duque de Caxias", "896", "Belém", "Pará", 1);
+INSERT INTO locations VALUES (NULL, "Pedro Miranda", "754", "Belém", "Pará", 1);
+INSERT INTO locations VALUES (NULL, "Generalíssimo", "397", "Belém", "Pará", 1);
+INSERT INTO locations VALUES (NULL, "Augusta", "112", "São Paulo", "São Paulo", 19);
+INSERT INTO locations VALUES (NULL, "Oscar Freire", "276", "São Paulo", "São Paulo", 19);
+INSERT INTO locations VALUES (NULL, "9 de Julho", "555", "São Paulo", "São Paulo", 19);
+INSERT INTO locations VALUES (NULL, "Avenida Paulista", "232", "São Paulo", "São Paulo", 19);
+INSERT INTO locations VALUES (NULL, "25 de Março", "876", "São Paulo", "São Paulo", 19);
+INSERT INTO locations VALUES (NULL, "Mem de Sá", "222", "Rio de Janeiro", "Rio de Janeiro", 15);
+INSERT INTO locations VALUES (NULL, "Primeiro de Março", "762", "Rio de Janeiro", "Rio de Janeiro", 15);
+INSERT INTO locations VALUES (NULL, "Rio Branco", "685", "Rio de Janeiro", "Rio de Janeiro", 15);
+INSERT INTO locations VALUES (NULL, "Rodrigues Alves", "562", "Rio de Janeiro", "Rio de Janeiro", 15);
+INSERT INTO locations VALUES (NULL, "Epitácio Pessoa", "953", "Rio de Janeiro", "Rio de Janeiro", 15);
+INSERT INTO locations VALUES (NULL, "Beira Mar", "771", "Fortaleza", "Ceara", 5);
+INSERT INTO locations VALUES (NULL, "Abolição", "802", "Fortaleza", "Ceara", 5);
+INSERT INTO locations VALUES (NULL, "Sabino Pires", "325", "Fortaleza", "Ceara", 5);
+INSERT INTO locations VALUES (NULL, "Dragão do Mar", "672", "Fortaleza", "Ceara", 5);
+INSERT INTO locations VALUES (NULL, "Santos Dummont", "903", "Fortaleza", "Ceara", 5);
+
+#INSERT EM "departments" ----------
 
 insert into departments values (NULL, "Educação Científica", 15);
-insert into departments values (NULL, "Ciências da Saúde", 12);
-insert into departments values (NULL, "Trânsito", 11);
-insert into departments values (NULL, "Ciência da Computação", 11);
-insert into departments values (NULL, "Biblioteconomia", 12);
-insert into departments values (NULL, "Artes Visuais", 10);
-insert into departments values (NULL, "Enfermagem", 9);
-insert into departments values (NULL, "Design", 9);
-insert into departments values (NULL, "Engenharia Ambiental", 18);
-insert into departments values (NULL, "Engenharia Civil", 13);
-insert into departments values (NULL, "Agronomia", 13);
-insert into departments values (NULL, "Engenharia de Software", 1);
-insert into departments values (NULL, "Moda", 12);
-insert into departments values (NULL, "Pedagogia", 12);
+insert into departments values (NULL, "Ciências da Saúde", 19);
+insert into departments values (NULL, "Trânsito", 19);
+insert into departments values (NULL, "Ciência da Computação", 19);
+insert into departments values (NULL, "Biblioteconomia", 15);
+insert into departments values (NULL, "Artes Visuais", 15);
+insert into departments values (NULL, "Enfermagem", 19);
+insert into departments values (NULL, "Design", 19);
+insert into departments values (NULL, "Engenharia Ambiental", 15);
+insert into departments values (NULL, "Engenharia Civil", 15);
+insert into departments values (NULL, "Agronomia", 1);
+insert into departments values (NULL, "Engenharia de Software", 5);
+insert into departments values (NULL, "Moda", 5);
+insert into departments values (NULL, "Pedagogia", 5);
 insert into departments values (NULL, "Música", 5);
-insert into departments values (NULL, "História", 7);
-insert into departments values (NULL, "Física", 9);
-insert into departments values (NULL, "Engenharia Sanitária", 4);
-insert into departments values (NULL, "Teatro", 3);
-insert into departments values (NULL, "Química", 2);
+insert into departments values (NULL, "História", 1);
+insert into departments values (NULL, "Física", 1);
+insert into departments values (NULL, "Engenharia Sanitária", 1);
+insert into departments values (NULL, "Teatro", 5);
+insert into departments values (NULL, "Química", 1);
+
+#INSERT EM "jobs" ----------
+
+insert into jobs values (NULL, "Professor", 5500, 20000);
+insert into jobs values (NULL, "Médico", 15000, 40000);
+insert into jobs values (NULL, "Engenheiro Civil", 10300, 17000);
+insert into jobs values (NULL, "Juiz", 25000, 70000);
+insert into jobs values (NULL, "Diretor", 20500, 50000);
+insert into jobs values (NULL, "Pedagogo", 15000, 30000);
+insert into jobs values (NULL, "Programador", 3000, 20000);
+insert into jobs values (NULL, "Cantor", 2500, 10000);
+insert into jobs values (NULL, "Administrador", 5500, 20000);
+insert into jobs values (NULL, "Contador", 6650, 16000);
+insert into jobs values (NULL, "Enfermeiro", 5600, 20000);
+insert into jobs values (NULL, "Cozinheiro", 5500, 20000);
+insert into jobs values (NULL, "Técnico de Informática", 2500, 7000);
+insert into jobs values (NULL, "Atendente de Telemarketing", 4700, 16000);
+insert into jobs values (NULL, "Pintor", 4600, 12000);
+insert into jobs values (NULL, "Eletricista", 5500, 24000);
+insert into jobs values (NULL, "Encanador", 5500, 8800);
+insert into jobs values (NULL, "Marceneiro", 4800, 12400);
+insert into jobs values (NULL, "Jornalista", 3500, 12000);
+insert into jobs values (NULL, "Odontologista", 8500, 20000);
