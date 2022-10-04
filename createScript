@@ -12,7 +12,6 @@ start_date DATE NOT NULL,
 end_date DATE NOT NULL,
 job_id INT NOT NULL,
 department_id INT NOT NULL
-   
 );
 
 CREATE TABLE Departments (
