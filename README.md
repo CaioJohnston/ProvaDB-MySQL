@@ -1,8 +1,10 @@
 # ProvaDB-MySQL
+
 Scripts da Prova de Banco de Dados
 
 # Grupo:
-Caio Johnston \n
-Ricardo Vigliano \n
-Pedro Vitor Raiol \n
-Vinicius Rayol \n
+
+Caio Johnston
+Ricardo Vigliano
+Pedro Vitor Raiol
+Vinicius Rayol
