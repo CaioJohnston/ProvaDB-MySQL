@@ -1,6 +1,9 @@
 a) Faça uma seleção que mostre sobrenome (last_name) dos empregados que possuem a terceira letra sendo “a”.
 Nesta seleção mostre também o nome do departamento que o empregado trabalha, ordenando a saída de dados pelo último nome do empregado (ordem alfabética ascendente).
--> SELECT last_name FROM employees where SUBSTRING(last_name, 3 , 1) = 'a';
+-> SELECT emp.last_name AS "Nome", dp.name AS "Departamento" FROM employees AS emp 
+   JOIN departments AS dp ON emp.department_id = dp.id
+   WHERE SUBSTRING(last_name, 3 , 1) = 'a'
+   ORDER BY dp.name asc;
 
 b) Construa uma query (consulta) que mostre a quantidade de empregados por nome do departamento.
 -> SELECT departments.name, COUNT(*) AS num_funcionarios FROM employees 
@@ -8,12 +11,18 @@ b) Construa uma query (consulta) que mostre a quantidade de empregados por nome 
    GROUP BY department_id;
 
 c) Escreva uma query (consulta) que mostre a diferença entre o maior e o menor salário. Faça com que o resultado seja mostrado com o label “Diferença”.
--> SELECT (MAX(salary) - MIN(salary)) AS Diferença FROM employees;
+-> SELECT MIN(salary) as "Menor Salario", MAX(salary) as "Maior Salario", (MAX(salary) - MIN(salary)) AS Diferença FROM employees;
 
 d) Selecione o número, nome e sobrenome dos empregados que ganham mais do que a média de salário acrescido de 10%.
+-> SELECT emp.phone_number, emp.first_name, emp.last_name, emp.salary, emp.commission_pct FROM employees AS emp
+   WHERE salary > (select avg(salary) FROM employees) AND commission_pct >= 10
+   ORDER BY first_name;
 
 e) Selecione o nome e a data de admissão de todos os empregados que foram admitidos depois do empregado de sobrenome (last_name) Davies.
 (Vocês precisam inserir um empregado com esse sobrenome)
+-> SELECT emp.first_name, emp.hire_date FROM employees AS emp
+   WHERE (hire_date > '2019-03-18')
+   ORDER BY hire_date;
 
 f)  Construa uma query na qual seja retornada o número do gerente e o menor salário pago para um empregado supervisionado pelo gerente. 
 Exclua do resultado os empregados em que o salário seja maior ou igual a 3000 ou menor ou igual à 6000. Ordene o resultado por ordem descendente de salário.
