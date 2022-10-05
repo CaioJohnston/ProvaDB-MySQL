@@ -1,14 +1,14 @@
 a) Faça uma seleção que mostre sobrenome (last_name) dos empregados que possuem a terceira letra sendo “a”.
 Nesta seleção mostre também o nome do departamento que o empregado trabalha, ordenando a saída de dados pelo último nome do empregado (ordem alfabética ascendente).
-SELECT last_name FROM employees where SUBSTRING(last_name, 3 , 1) = 'a';
+-> SELECT last_name FROM employees where SUBSTRING(last_name, 3 , 1) = 'a';
 
 b) Construa uma query (consulta) que mostre a quantidade de empregados por nome do departamento.
-SELECT departments.name, COUNT(*) AS num_funcionarios FROM employees 
-JOIN departments ON departments.id=employees.department_id
-GROUP BY department_id;
+-> SELECT departments.name, COUNT(*) AS num_funcionarios FROM employees 
+   JOIN departments ON departments.id=employees.department_id
+   GROUP BY department_id;
 
 c) Escreva uma query (consulta) que mostre a diferença entre o maior e o menor salário. Faça com que o resultado seja mostrado com o label “Diferença”.
-SELECT (MAX(salary) - MIN(salary)) AS Diferença FROM employees;
+-> SELECT (MAX(salary) - MIN(salary)) AS Diferença FROM employees;
 
 d) Selecione o número, nome e sobrenome dos empregados que ganham mais do que a média de salário acrescido de 10%.
 
@@ -19,11 +19,19 @@ f)  Construa uma query na qual seja retornada o número do gerente e o menor sal
 Exclua do resultado os empregados em que o salário seja maior ou igual a 3000 ou menor ou igual à 6000. Ordene o resultado por ordem descendente de salário.
 
 g) Selecione o primeiro nome do empregado, o nome do cargo atual (job_title) e do anterior.
+-> SELECT employees.first_name, jobs.title
+   from employees 
+   join jobs on jobs.id = employees.job_id;
 
 h)  Mostrar a quantidade de empregados por nome da região.
 
 i)  Escreva uma query que mostre o nome do departamento, localização do mesmo, quantidade de funcionários e média de salários para todos os empregados de um departamento. Faça com que o resultado seja mostrado com os labels “Nome do Depto”, “Localização”, “Número de Funcionários” e “Média de Salário”. 
 Agrupar o resultado por nome do departamento e localização do mesmo.
+-> SELECT COUNT(*), AVG(salary), departments.name, locations.street_address
+   from employees
+   join departments on departments.id = employees.department_id
+   join locations on locations.id = departments.location_id
+   group by departments.id
 
 j)  Construa uma query que mostre o nome e sobrenome (concatenado) 
 dos empregados os quais trabalham em algum departamento que possui empregados que contém a letra “u” em qualquer posição do último nome (last_name).
