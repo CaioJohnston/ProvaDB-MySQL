@@ -36,7 +36,13 @@ g) Selecione o primeiro nome do empregado, o nome do cargo atual (job_title) e d
    join jobs on jobs.id = employees.job_id;
 
 h)  Mostrar a quantidade de empregados por nome da região.
-
+-> SELECT regions.name, COUNT(employees.id) AS num_funcionarios FROM employees 
+   JOIN departments ON departments.id = employees.department_id
+   JOIN locations ON locations.id = departments.location_id
+   JOIN countries ON countries.id = locations.country_id
+   JOIN regions ON regions.id = countries.region_id
+   GROUP BY regions.id;
+   
 i)  Escreva uma query que mostre o nome do departamento, localização do mesmo, quantidade de funcionários e média de salários para todos os empregados de um departamento. Faça com que o resultado seja mostrado com os labels “Nome do Depto”, “Localização”, “Número de Funcionários” e “Média de Salário”. 
 Agrupar o resultado por nome do departamento e localização do mesmo.
 -> SELECT COUNT(*), AVG(salary), departments.name, locations.street_address from employees
