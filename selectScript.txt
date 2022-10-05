@@ -20,12 +20,16 @@ d) Selecione o número, nome e sobrenome dos empregados que ganham mais do que a
 
 e) Selecione o nome e a data de admissão de todos os empregados que foram admitidos depois do empregado de sobrenome (last_name) Davies.
 (Vocês precisam inserir um empregado com esse sobrenome)
--> SELECT emp.first_name, emp.hire_date FROM employees AS emp
-   WHERE (hire_date > '2019-03-18')
+-> SELECT first_name, hire_date FROM employees
+   WHERE hire_date > (SELECT hire_date FROM employees WHERE last_name = "Davies")
    ORDER BY hire_date;
 
 f)  Construa uma query na qual seja retornada o número do gerente e o menor salário pago para um empregado supervisionado pelo gerente. 
 Exclua do resultado os empregados em que o salário seja maior ou igual a 3000 ou menor ou igual à 6000. Ordene o resultado por ordem descendente de salário.
+-> SELECT manager_id, salary FROM employees
+   WHERE  salary < 3000 OR salary > 6000
+   GROUP BY manager_id
+   ORDER BY salary DESC;
 
 g) Selecione o primeiro nome do empregado, o nome do cargo atual (job_title) e do anterior.
 -> SELECT employees.first_name, jobs.title
