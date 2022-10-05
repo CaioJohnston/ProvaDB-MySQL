@@ -124,7 +124,7 @@ INSERT INTO employees VALUES (NULL, "Marcos", "Paulo", "mp@cesupa.com", "9878755
 INSERT INTO employees VALUES (NULL, "Blaze", "Prazeres", "bpraz@hotmail.com", "922221111", "2020-01-01", 7, 11000, 1, 4, 4);
 INSERT INTO employees VALUES (NULL, "Isaac", "ElGrably", "ehoisaac@gmail.com", "955342652", "2020-01-01", 8, 7000, 3, 15, 15);
 INSERT INTO employees VALUES (NULL, "Matue", "Tuezin", "tuetue@gmail.com", "977776666", "2021-04-10", 8, 5000, 2, 15, 15);
-INSERT INTO employees VALUES (NULL, "Luan", "Carvalho", "cadeira@gmail.com", "988542652", "2019-03-18", 5, 35000, 5, 8, 8);
+INSERT INTO employees VALUES (NULL, "Luan", "Davies", "cadeira@gmail.com", "988542652", "2019-03-18", 5, 35000, 5, 8, 8);
 INSERT INTO employees VALUES (NULL, "Steve", "Minecraft", "infancia@db.com", "976762222", "2021-03-29", 11, 8800, 7, 7, 7);
 INSERT INTO employees VALUES (NULL, "Bolso", "Lula", "2turno@gmail.com", "990987761", "2022-10-30", 15, 4600, 4, 6, 6);
 INSERT INTO employees VALUES (NULL, "Lucifer", "Morningstar", "therealdevil@gmail.com", "900986700", "2015-07-07", 1, 15000, 3, 16, 16);
