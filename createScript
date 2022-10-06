@@ -1,5 +1,7 @@
 CREATE DATABASE provaDB;
 
+USE provaDB;
+
 CREATE TABLE Jobs (
 id INT NOT NULL AUTO_INCREMENT,
 title varchar(35) NOT NULL,
