@@ -1,6 +1,6 @@
 a) Faça uma seleção que mostre sobrenome (last_name) dos empregados que possuem a terceira letra sendo “a”.
 Nesta seleção mostre também o nome do departamento que o empregado trabalha, ordenando a saída de dados pelo último nome do empregado (ordem alfabética ascendente).
--> SELECT emp.last_name AS "Nome", dp.name AS "Departamento" FROM employees AS emp 
+-> SELECT emp.last_name AS "Sobrenome", dp.name AS "Departamento" FROM employees AS emp 
    JOIN departments AS dp ON emp.department_id = dp.id
    WHERE SUBSTRING(last_name, 3 , 1) = 'a'
    ORDER BY dp.name asc;
@@ -14,7 +14,7 @@ c) Escreva uma query (consulta) que mostre a diferença entre o maior e o menor 
 -> SELECT MIN(salary) as "Menor Salario", MAX(salary) as "Maior Salario", (MAX(salary) - MIN(salary)) AS Diferença FROM employees;
 
 d) Selecione o número, nome e sobrenome dos empregados que ganham mais do que a média de salário acrescido de 10%.
--> SELECT emp.phone_number, emp.first_name, emp.last_name, emp.salary, emp.commission_pct FROM employees AS emp
+-> SELECT emp.phone_number, emp.first_name, emp.last_name, emp.salary FROM employees AS emp
    WHERE salary > (select avg(salary) FROM employees) AND commission_pct >= 10
    ORDER BY first_name;
 
@@ -26,14 +26,15 @@ e) Selecione o nome e a data de admissão de todos os empregados que foram admit
 
 f)  Construa uma query na qual seja retornada o número do gerente e o menor salário pago para um empregado supervisionado pelo gerente. 
 Exclua do resultado os empregados em que o salário seja maior ou igual a 3000 ou menor ou igual à 6000. Ordene o resultado por ordem descendente de salário.
--> SELECT manager_id, salary FROM employees
+-> SELECT manager_id, MIN(salary) FROM employees
    WHERE  salary < 3000 OR salary > 6000
    GROUP BY manager_id
    ORDER BY salary DESC;
 
 g) Selecione o primeiro nome do empregado, o nome do cargo atual (job_title) e do anterior.
--> SELECT employees.first_name, jobs.title from employees 
-   join jobs on jobs.id = employees.job_id;
+-> SELECT employees.first_name, jobs.title, job_history.* FROM employees 
+   JOIN jobs ON jobs.id = employees.job_id
+   JOIN job_history ON job_history.employee_id = employees.id;
 
 h)  Mostrar a quantidade de empregados por nome da região.
 -> SELECT regions.name, COUNT(employees.id) AS num_funcionarios FROM employees 
@@ -45,10 +46,11 @@ h)  Mostrar a quantidade de empregados por nome da região.
    
 i)  Escreva uma query que mostre o nome do departamento, localização do mesmo, quantidade de funcionários e média de salários para todos os empregados de um departamento. Faça com que o resultado seja mostrado com os labels “Nome do Depto”, “Localização”, “Número de Funcionários” e “Média de Salário”. 
 Agrupar o resultado por nome do departamento e localização do mesmo.
--> SELECT COUNT(*), AVG(salary), departments.name, locations.street_address from employees
-   join departments on departments.id = employees.department_id
-   join locations on locations.id = departments.location_id
-   group by departments.id;
+-> SELECT departments.name AS "Nome do Depto", locations.street_address AS "Localizacao", 
+   COUNT(employees.id) AS "Numero de Funcionarios", AVG(employees.salary) AS "Media de Salario" FROM employees
+   JOIN departments ON departments.id = employees.department_id
+   JOIN locations ON locations.id = departments.location_id
+   GROUP BY departments.name, departments.location_id;
 
 j)  Construa uma query que mostre o nome e sobrenome (concatenado) 
 dos empregados os quais trabalham em algum departamento que possui empregados que contém a letra “u” em qualquer posição do último nome (last_name).
